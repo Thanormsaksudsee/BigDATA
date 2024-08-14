@@ -29,7 +29,7 @@ lines = spark \
     .option("maxFilesPerTrigger", 1) \
     .option("header", True) \
     .schema(file_schema) \
-    .load("../data/stream")
+    .load("./data/stream")
 
 # Print the schema of the streaming DataFrame
 lines.printSchema()

@@ -29,7 +29,7 @@ lines = spark \
     .option("maxFilesPerTrigger", 1) \
     .option("header", True) \
     .schema(file_schema) \
-    .load("../data/stream")
+    .load("./data/stream")
 
 # For demonstration, let's write the output to the console
 query = lines.writeStream \

@@ -27,13 +27,13 @@ df_part1 = spark.read \
     .format("csv") \
     .option("header", "true") \
     .schema(file_schema) \
-    .load("fb_part1.csv")
+    .load("fb1.csv")
 
 df_part2 = spark.read \
     .format("csv") \
     .option("header", "true") \
     .schema(file_schema) \
-    .load("fb_part2.csv")
+    .load("fb2.csv")
 
 # Show the first few rows of each DataFrame
 df_part1.show()
